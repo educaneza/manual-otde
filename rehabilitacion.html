@@ -54,14 +54,84 @@
       </div>
 
       <div class="content-area">
-        <h1>Rehabilitación de Aulas</h1>
-        <p class="page-subtitle">Procedimientos para la habilitación, configuración y puesta en marcha de equipos de cómputo en aulas.</p>
+        <h1>Rehabilitación de Aulas de Cómputo</h1>
 
-        <div class="placeholder-block">
-          <span class="placeholder-icon">&#128187;</span>
-          <h3>Contenido en construcción</h3>
-          <p>Esta sección será documentada próximamente por el equipo OTDE.</p>
-        </div>
+        <h2>¿Qué es?</h2>
+        <p>El Sistema de Rehabilitación de Aulas de Cómputo gestiona el ciclo completo de visitas técnicas a escuelas de la región, desde la recepción de solicitudes hasta el cierre del reporte. Automatiza la notificación a los centros escolares, genera reportes en PDF y organiza las evidencias fotográficas en Google Drive, dejando constancia formal de cada intervención técnica realizada.</p>
+
+        <h2>Ficha técnica</h2>
+        <table style="border-collapse: collapse; width: 100%; margin-bottom: 1.5rem;">
+          <tbody>
+            <tr>
+              <td style="padding: 0.6rem 1rem 0.6rem 0; font-weight: 600; white-space: nowrap; vertical-align: top; border-bottom: 1px solid var(--border); color: var(--text-secondary); width: 200px;">Plataforma</td>
+              <td style="padding: 0.6rem 0; border-bottom: 1px solid var(--border);">Google Forms + Google Sheets + Apps Script</td>
+            </tr>
+            <tr>
+              <td style="padding: 0.6rem 1rem 0.6rem 0; font-weight: 600; white-space: nowrap; vertical-align: top; border-bottom: 1px solid var(--border); color: var(--text-secondary);">Frecuencia de visitas</td>
+              <td style="padding: 0.6rem 0; border-bottom: 1px solid var(--border);">2 a 3 por semana</td>
+            </tr>
+            <tr>
+              <td style="padding: 0.6rem 1rem 0.6rem 0; font-weight: 600; white-space: nowrap; vertical-align: top; border-bottom: 1px solid var(--border); color: var(--text-secondary);">Reporte</td>
+              <td style="padding: 0.6rem 0; border-bottom: 1px solid var(--border);">PDF automático enviado al correo de la escuela</td>
+            </tr>
+            <tr>
+              <td style="padding: 0.6rem 1rem 0.6rem 0; font-weight: 600; white-space: nowrap; vertical-align: top; border-bottom: 1px solid var(--border); color: var(--text-secondary);">Evidencias</td>
+              <td style="padding: 0.6rem 0; border-bottom: 1px solid var(--border);">Organizadas en Google Drive</td>
+            </tr>
+            <tr>
+              <td style="padding: 0.6rem 1rem 0.6rem 0; font-weight: 600; white-space: nowrap; vertical-align: top; color: var(--text-secondary);">Operación</td>
+              <td style="padding: 0.6rem 0;">Jefe de la Oficina (coordinación) / Técnicos OTDE (reporte en campo)</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2>Flujo completo de una visita</h2>
+        <ol>
+          <li>OTDE recibe solicitud de visita por oficio.</li>
+          <li>El Jefe de la Oficina registra la solicitud en el Sheets.</li>
+          <li>Se agenda la visita y se notifica a la escuela por correo y llamada telefónica.</li>
+          <li>El técnico atiende la visita en campo.</li>
+          <li>El técnico llena el formulario de reporte desde el dispositivo móvil (tab Despacho).</li>
+          <li>La información llega automáticamente al correo de la escuela y alimenta el Sheets.</li>
+        </ol>
+
+        <h2>Guía para el técnico en campo</h2>
+        <ul>
+          <li>Usar el tab Despacho del sistema desde el iPhone.</li>
+          <li>Llenar todos los campos del formulario al terminar la visita, antes de salir de la escuela.</li>
+          <li>Cargar las evidencias fotográficas desde el mismo formulario.</li>
+          <li>Verificar que el formulario haya enviado correctamente antes de retirarse.</li>
+        </ul>
+
+        <h2>Situaciones frecuentes</h2>
+        <table style="border-collapse: collapse; width: 100%; margin-bottom: 1.5rem;">
+          <thead>
+            <tr>
+              <th style="padding: 0.6rem 1rem 0.6rem 0; text-align: left; border-bottom: 2px solid var(--border); color: var(--text-secondary); font-weight: 600; width: 40%;">Situación</th>
+              <th style="padding: 0.6rem 0; text-align: left; border-bottom: 2px solid var(--border); color: var(--text-secondary); font-weight: 600;">Qué hacer</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="padding: 0.6rem 1rem 0.6rem 0; vertical-align: top; border-bottom: 1px solid var(--border);">El PDF no llega al correo de la escuela o llega vacío</td>
+              <td style="padding: 0.6rem 0; border-bottom: 1px solid var(--border);">Reportar al Jefe de la Oficina — es un problema conocido en proceso de corrección.</td>
+            </tr>
+            <tr>
+              <td style="padding: 0.6rem 1rem 0.6rem 0; vertical-align: top; border-bottom: 1px solid var(--border);">Problemas con el formato del PDF</td>
+              <td style="padding: 0.6rem 0; border-bottom: 1px solid var(--border);">Reportar al Jefe de la Oficina con captura del error.</td>
+            </tr>
+            <tr>
+              <td style="padding: 0.6rem 1rem 0.6rem 0; vertical-align: top;">Las evidencias no se organizan correctamente en Drive</td>
+              <td style="padding: 0.6rem 0;">Reportar al Jefe de la Oficina — es un problema conocido en proceso de corrección.</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2>Mejoras pendientes</h2>
+        <ul>
+          <li>Garantizar que los reportes PDF lleguen correctamente a los destinatarios.</li>
+          <li>Corregir la organización automática de evidencias en Google Drive.</li>
+        </ul>
       </div>
     </div>
 
