@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inicio — Manual de Sistemas OTDE</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">&#9776;</button>
+  <div class="overlay" id="overlay"></div>
+
+  <div class="layout">
+
+    <!-- ── Barra lateral ─────────────────────────────────────── -->
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <div class="logo-label">OTDE</div>
+        <div class="site-title">Manual de<br>Sistemas OTDE</div>
+      </div>
+
+      <nav class="sidebar-nav">
+        <div class="nav-section-label">Navegación</div>
+        <a href="index.html" class="active">
+          <span class="nav-icon">&#8962;</span> Inicio
+        </a>
+        <a href="sitio-web.html">
+          <span class="nav-icon">&#127760;</span> Sitio Web SEPRN
+        </a>
+        <a href="instalador-office.html">
+          <span class="nav-icon">&#128190;</span> Instalador Office
+        </a>
+        <a href="sgci.html">
+          <span class="nav-icon">&#9993;</span> SGCI Correos Institucionales
+        </a>
+        <a href="rehabilitacion.html">
+          <span class="nav-icon">&#128187;</span> Rehabilitación de Aulas
+        </a>
+        <a href="en-desarrollo.html">
+          <span class="nav-icon">&#128736;</span> En Desarrollo
+        </a>
+      </nav>
+
+      <div class="sidebar-footer">
+        Manual de Sistemas &copy; OTDE
+      </div>
+    </aside>
+
+    <!-- ── Contenido principal ───────────────────────────────── -->
+    <div class="main-content">
+      <div class="topbar">
+        <span>Manual de Sistemas OTDE</span>
+        <span class="breadcrumb-sep">/</span>
+        <span class="breadcrumb-current">Inicio</span>
+      </div>
+
+      <div class="content-area">
+        <h1>Bienvenido al Manual de Sistemas</h1>
+        <p class="page-subtitle">
+          Documentación técnica y procedimientos de la Oficina de Tecnología y Desarrollo Educativo (OTDE).
+          Selecciona una sección en la barra lateral para comenzar.
+        </p>
+
+        <h2>Secciones disponibles</h2>
+        <p>Este manual cubre los principales sistemas y herramientas administrados por OTDE.</p>
+
+        <div class="card-grid">
+          <a class="card" href="sitio-web.html">
+            <span class="card-icon">&#127760;</span>
+            <span class="card-title">Sitio Web SEPRN</span>
+            <span class="card-desc">Gestión y administración del sitio institucional.</span>
+          </a>
+          <a class="card" href="instalador-office.html">
+            <span class="card-icon">&#128190;</span>
+            <span class="card-title">Instalador Office</span>
+            <span class="card-desc">Proceso de instalación y licenciamiento.</span>
+          </a>
+          <a class="card" href="sgci.html">
+            <span class="card-icon">&#9993;</span>
+            <span class="card-title">SGCI Correos</span>
+            <span class="card-desc">Sistema de Gestión de Correos Institucionales.</span>
+          </a>
+          <a class="card" href="rehabilitacion.html">
+            <span class="card-icon">&#128187;</span>
+            <span class="card-title">Rehabilitación de Aulas</span>
+            <span class="card-desc">Procedimientos para la habilitación de equipos.</span>
+          </a>
+          <a class="card" href="en-desarrollo.html">
+            <span class="card-icon">&#128736;</span>
+            <span class="card-title">En Desarrollo</span>
+            <span class="card-desc">Proyectos y sistemas en proceso de implementación.</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    const toggle = document.getElementById('menuToggle');
+    const sidebar = document.getElementById('sidebar');
+    const overlay = document.getElementById('overlay');
+    toggle.addEventListener('click', () => {
+      sidebar.classList.toggle('open');
+      overlay.classList.toggle('visible');
+    });
+    overlay.addEventListener('click', () => {
+      sidebar.classList.remove('open');
+      overlay.classList.remove('visible');
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Instalador Office — Manual de Sistemas OTDE</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">&#9776;</button>
+  <div class="overlay" id="overlay"></div>
+
+  <div class="layout">
+
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <div class="logo-label">OTDE</div>
+        <div class="site-title">Manual de<br>Sistemas OTDE</div>
+      </div>
+
+      <nav class="sidebar-nav">
+        <div class="nav-section-label">Navegación</div>
+        <a href="index.html">
+          <span class="nav-icon">&#8962;</span> Inicio
+        </a>
+        <a href="sitio-web.html">
+          <span class="nav-icon">&#127760;</span> Sitio Web SEPRN
+        </a>
+        <a href="instalador-office.html" class="active">
+          <span class="nav-icon">&#128190;</span> Instalador Office
+        </a>
+        <a href="sgci.html">
+          <span class="nav-icon">&#9993;</span> SGCI Correos Institucionales
+        </a>
+        <a href="rehabilitacion.html">
+          <span class="nav-icon">&#128187;</span> Rehabilitación de Aulas
+        </a>
+        <a href="en-desarrollo.html">
+          <span class="nav-icon">&#128736;</span> En Desarrollo
+        </a>
+      </nav>
+
+      <div class="sidebar-footer">
+        Manual de Sistemas &copy; OTDE
+      </div>
+    </aside>
+
+    <div class="main-content">
+      <div class="topbar">
+        <a href="index.html" style="color: inherit; text-decoration: none;">Manual de Sistemas OTDE</a>
+        <span class="breadcrumb-sep">/</span>
+        <span class="breadcrumb-current">Instalador Office</span>
+      </div>
+
+      <div class="content-area">
+        <h1>Instalador Office</h1>
+        <p class="page-subtitle">Procedimiento de instalación, activación y licenciamiento de Microsoft Office para equipos institucionales.</p>
+
+        <div class="placeholder-block">
+          <span class="placeholder-icon">&#128190;</span>
+          <h3>Contenido en construcción</h3>
+          <p>Esta sección será documentada próximamente por el equipo OTDE.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    const toggle = document.getElementById('menuToggle');
+    const sidebar = document.getElementById('sidebar');
+    const overlay = document.getElementById('overlay');
+    toggle.addEventListener('click', () => {
+      sidebar.classList.toggle('open');
+      overlay.classList.toggle('visible');
+    });
+    overlay.addEventListener('click', () => {
+      sidebar.classList.remove('open');
+      overlay.classList.remove('visible');
+    });
+  </script>
+</body>
+</html>
