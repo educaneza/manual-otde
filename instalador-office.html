@@ -55,13 +55,85 @@
 
       <div class="content-area">
         <h1>Instalador Office</h1>
-        <p class="page-subtitle">Procedimiento de instalación, activación y licenciamiento de Microsoft Office para equipos institucionales.</p>
 
-        <div class="placeholder-block">
-          <span class="placeholder-icon">&#128190;</span>
-          <h3>Contenido en construcción</h3>
-          <p>Esta sección será documentada próximamente por el equipo OTDE.</p>
-        </div>
+        <h2>¿Qué es?</h2>
+        <p>El Instalador Automatizado de Office es una herramienta desarrollada por OTDE que permite instalar Microsoft Office en equipos de cómputo de las escuelas de manera guiada, validando el centro de trabajo mediante CCT y registrando la instalación automáticamente en una hoja de Google Sheets. Elimina la necesidad de instalaciones manuales no controladas y genera un registro centralizado de cada equipo atendido.</p>
+
+        <h2>Ficha técnica</h2>
+        <table style="border-collapse: collapse; width: 100%; margin-bottom: 1.5rem;">
+          <tbody>
+            <tr>
+              <td style="padding: 0.6rem 1rem 0.6rem 0; font-weight: 600; white-space: nowrap; vertical-align: top; border-bottom: 1px solid var(--border); color: var(--text-secondary); width: 180px;">Versiones disponibles</td>
+              <td style="padding: 0.6rem 0; border-bottom: 1px solid var(--border);">Office 2019 (distribución masiva) / Office 2016 (equipos con Windows 8 o anterior)</td>
+            </tr>
+            <tr>
+              <td style="padding: 0.6rem 1rem 0.6rem 0; font-weight: 600; white-space: nowrap; vertical-align: top; border-bottom: 1px solid var(--border); color: var(--text-secondary);">Distribución</td>
+              <td style="padding: 0.6rem 0; border-bottom: 1px solid var(--border);">USB, correo electrónico, WhatsApp</td>
+            </tr>
+            <tr>
+              <td style="padding: 0.6rem 1rem 0.6rem 0; font-weight: 600; white-space: nowrap; vertical-align: top; border-bottom: 1px solid var(--border); color: var(--text-secondary);">Registro</td>
+              <td style="padding: 0.6rem 0; border-bottom: 1px solid var(--border);">Google Sheets automático por CCT</td>
+            </tr>
+            <tr>
+              <td style="padding: 0.6rem 1rem 0.6rem 0; font-weight: 600; white-space: nowrap; vertical-align: top; color: var(--text-secondary);">Mantenimiento</td>
+              <td style="padding: 0.6rem 0;">Jefe de la Oficina</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2>¿Quién lo usa?</h2>
+        <p>Técnicos OTDE (Alejandro y Marcos) y personal de escuelas cuando se les distribuye directamente.</p>
+
+        <h2>Guía operativa</h2>
+        <ol>
+          <li>Recibe el instalador por USB, correo o WhatsApp.</li>
+          <li>Si viene en formato <code>.rar</code>, descomprime el archivo antes de continuar.</li>
+          <li>Ejecuta el instalador.</li>
+          <li>Ingresa el CCT del centro de trabajo cuando el sistema lo solicite.</li>
+          <li>Espera a que finalice la instalación.</li>
+          <li>El registro se genera automáticamente en el sistema.</li>
+        </ol>
+
+        <h2>Errores frecuentes</h2>
+        <table style="border-collapse: collapse; width: 100%; margin-bottom: 1.5rem;">
+          <thead>
+            <tr>
+              <th style="padding: 0.6rem 1rem 0.6rem 0; text-align: left; border-bottom: 2px solid var(--border); color: var(--text-secondary); font-weight: 600; width: 40%;">Problema</th>
+              <th style="padding: 0.6rem 0; text-align: left; border-bottom: 2px solid var(--border); color: var(--text-secondary); font-weight: 600;">Qué hacer</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="padding: 0.6rem 1rem 0.6rem 0; vertical-align: top; border-bottom: 1px solid var(--border);">No se puede descomprimir el .rar</td>
+              <td style="padding: 0.6rem 0; border-bottom: 1px solid var(--border);">Instala WinRAR o 7-Zip en el equipo e intenta nuevamente.</td>
+            </tr>
+            <tr>
+              <td style="padding: 0.6rem 1rem 0.6rem 0; vertical-align: top; border-bottom: 1px solid var(--border);">El instalador no se ejecuta</td>
+              <td style="padding: 0.6rem 0; border-bottom: 1px solid var(--border);">Clic derecho → Ejecutar como administrador.</td>
+            </tr>
+            <tr>
+              <td style="padding: 0.6rem 1rem 0.6rem 0; vertical-align: top; border-bottom: 1px solid var(--border);">Error de compatibilidad con Windows</td>
+              <td style="padding: 0.6rem 0; border-bottom: 1px solid var(--border);">Verifica la versión de Windows. Si es Windows 8 o anterior, solicita la versión 2016 al equipo OTDE.</td>
+            </tr>
+            <tr>
+              <td style="padding: 0.6rem 1rem 0.6rem 0; vertical-align: top;">CCT no reconocido</td>
+              <td style="padding: 0.6rem 0;">Verifica que el CCT esté escrito correctamente. Si persiste, reporta al Jefe de la Oficina.</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2>Versiones disponibles</h2>
+        <ul>
+          <li><strong>Office 2019</strong> — para Windows 10 y posteriores. Versión de distribución masiva.</li>
+          <li><strong>Office 2016</strong> — para Windows 8 y equipos más antiguos. Funciona igual que la 2019 pero con compatibilidad extendida. Distribución limitada — solicitar al Jefe de la Oficina.</li>
+        </ul>
+
+        <h2>Mejoras pendientes</h2>
+        <ul>
+          <li>Unificar ambas versiones en un solo instalador.</li>
+          <li>Mejorar la interfaz de usuario.</li>
+          <li>Ampliar los mensajes de error para orientar mejor al usuario final.</li>
+        </ul>
       </div>
     </div>
 
