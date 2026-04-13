@@ -54,14 +54,101 @@
       </div>
 
       <div class="content-area">
-        <h1>SGCI Correos Institucionales</h1>
-        <p class="page-subtitle">Sistema de Gestión de Correos Institucionales: alta, baja, configuración y soporte de cuentas de correo.</p>
+        <h1>SGCI — Correos Institucionales</h1>
 
-        <div class="placeholder-block">
-          <span class="placeholder-icon">&#9993;</span>
-          <h3>Contenido en construcción</h3>
-          <p>Esta sección será documentada próximamente por el equipo OTDE.</p>
+        <h2>¿Qué es?</h2>
+        <p>El Sistema de Gestión de Correos Institucionales (SGCI) centraliza el proceso de solicitud, registro y entrega de cuentas de correo institucional (@dee.edu.mx y @aulamexiquense.mx) para el personal docente y administrativo de las escuelas de la región. Automatiza la recepción de solicitudes, el seguimiento del proceso y la notificación a los usuarios, reduciendo tiempos y errores en la gestión manual.</p>
+
+        <h2>Ficha técnica</h2>
+        <table style="border-collapse: collapse; width: 100%; margin-bottom: 1.5rem;">
+          <tbody>
+            <tr>
+              <td style="padding: 0.6rem 1rem 0.6rem 0; font-weight: 600; white-space: nowrap; vertical-align: top; border-bottom: 1px solid var(--border); color: var(--text-secondary); width: 200px;">Plataforma</td>
+              <td style="padding: 0.6rem 0; border-bottom: 1px solid var(--border);">Google Forms + Google Sheets + Apps Script</td>
+            </tr>
+            <tr>
+              <td style="padding: 0.6rem 1rem 0.6rem 0; font-weight: 600; white-space: nowrap; vertical-align: top; border-bottom: 1px solid var(--border); color: var(--text-secondary);">Cuentas que gestiona</td>
+              <td style="padding: 0.6rem 0; border-bottom: 1px solid var(--border);">@dee.edu.mx / @aulamexiquense.mx</td>
+            </tr>
+            <tr>
+              <td style="padding: 0.6rem 1rem 0.6rem 0; font-weight: 600; white-space: nowrap; vertical-align: top; border-bottom: 1px solid var(--border); color: var(--text-secondary);">Automatizaciones</td>
+              <td style="padding: 0.6rem 0; border-bottom: 1px solid var(--border);">onFormSubmit, resumen semanal automático</td>
+            </tr>
+            <tr>
+              <td style="padding: 0.6rem 1rem 0.6rem 0; font-weight: 600; white-space: nowrap; vertical-align: top; border-bottom: 1px solid var(--border); color: var(--text-secondary);">Dependencia externa</td>
+              <td style="padding: 0.6rem 0; border-bottom: 1px solid var(--border);">CoEEE (creación real de cuentas)</td>
+            </tr>
+            <tr>
+              <td style="padding: 0.6rem 1rem 0.6rem 0; font-weight: 600; white-space: nowrap; vertical-align: top; color: var(--text-secondary);">Operación</td>
+              <td style="padding: 0.6rem 0;">Jefe de la Oficina y Técnico de Soporte (Marcos)</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2>Flujo completo de una solicitud</h2>
+        <ol>
+          <li>El usuario llena el formulario de solicitud.</li>
+          <li>La información llega automáticamente al Google Sheets de OTDE.</li>
+          <li>OTDE copia la información al Excel compartido con CoEEE.</li>
+          <li>OTDE notifica a CoEEE vía WhatsApp que la información fue cargada.</li>
+          <li>CoEEE procesa la solicitud y crea las cuentas (tiempo variable).</li>
+          <li>CoEEE notifica a OTDE vía WhatsApp cuando las cuentas están listas (no siempre ocurre).</li>
+          <li>OTDE revisa el Excel compartido y copia las cuentas al Sheets propio.</li>
+          <li>El sistema ejecuta las automatizaciones y notifica al usuario.</li>
+        </ol>
+
+        <h2>Procedimiento de incidencias</h2>
+        <ol>
+          <li>El usuario contacta a OTDE por correo.</li>
+          <li>OTDE documenta el caso y notifica a CoEEE.</li>
+          <li>CoEEE revisa y atiende (tiempo de respuesta variable — sin protocolo definido).</li>
+          <li>OTDE verifica la resolución en el Excel compartido.</li>
+        </ol>
+
+        <div style="border-left: 3px solid var(--accent, #e09b3d); background: var(--bg-secondary, #f9f6f0); padding: 0.85rem 1.1rem; margin: 1.5rem 0; border-radius: 0 4px 4px 0;">
+          <strong>Limitación estructural:</strong> La dependencia de CoEEE sin protocolo de tiempos de respuesta definido genera demoras en la atención de incidencias. Esta parte del flujo está fuera del control de OTDE.
         </div>
+
+        <h2>Automatizaciones activas</h2>
+        <ul>
+          <li>Resumen semanal automático enviado a Marcos y al correo OTDE.</li>
+          <li>Notificación automática al usuario cuando su cuenta es registrada en el sistema.</li>
+        </ul>
+
+        <h2>Situaciones frecuentes</h2>
+        <table style="border-collapse: collapse; width: 100%; margin-bottom: 1.5rem;">
+          <thead>
+            <tr>
+              <th style="padding: 0.6rem 1rem 0.6rem 0; text-align: left; border-bottom: 2px solid var(--border); color: var(--text-secondary); font-weight: 600; width: 40%;">Situación</th>
+              <th style="padding: 0.6rem 0; text-align: left; border-bottom: 2px solid var(--border); color: var(--text-secondary); font-weight: 600;">Qué hacer</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="padding: 0.6rem 1rem 0.6rem 0; vertical-align: top; border-bottom: 1px solid var(--border);">Usuario reporta credenciales incorrectas</td>
+              <td style="padding: 0.6rem 0; border-bottom: 1px solid var(--border);">Documentar el caso, notificar a CoEEE por WhatsApp, dar seguimiento hasta confirmar resolución.</td>
+            </tr>
+            <tr>
+              <td style="padding: 0.6rem 1rem 0.6rem 0; vertical-align: top; border-bottom: 1px solid var(--border);">CoEEE no notifica que las cuentas están listas</td>
+              <td style="padding: 0.6rem 0; border-bottom: 1px solid var(--border);">Revisar periódicamente el Excel compartido sin esperar aviso.</td>
+            </tr>
+            <tr>
+              <td style="padding: 0.6rem 1rem 0.6rem 0; vertical-align: top; border-bottom: 1px solid var(--border);">Solicitudes duplicadas</td>
+              <td style="padding: 0.6rem 0; border-bottom: 1px solid var(--border);">Verificar en el Sheets antes de cargar al Excel de CoEEE.</td>
+            </tr>
+            <tr>
+              <td style="padding: 0.6rem 1rem 0.6rem 0; vertical-align: top;">Registros previos aparecen como pendientes</td>
+              <td style="padding: 0.6rem 0;">Es un comportamiento conocido del sistema — no afecta la operación actual.</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2>Mejoras pendientes</h2>
+        <ul>
+          <li>Reemplazar el formulario por una plataforma más profesional.</li>
+          <li>Implementar sistema de consulta para verificar si un usuario ya tiene cuenta asignada.</li>
+          <li>Establecer protocolo formal de tiempos de respuesta con CoEEE.</li>
+        </ul>
       </div>
     </div>
 
